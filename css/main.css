@@ -1,0 +1,40 @@
+/* CSS style file created by 
+===============================================================
+00: css var
+01: colour
+02: layout
+03: typography
+04: transition, animation, selector practice
+05: any exploration
+===============================================================
+*/
+
+/* 00 css var */
+:root{
+    --body-color: hsla(358, 59%, 34%, 1);
+    --page-color: hsla(242, 24%, 50%, 0.671);
+    --sidebar-color: hsla(0, 0%, 100%, 1);
+    --h1-color: hsla(36, 41%, 56%, 1);
+    --h2-color: hsla(36, 41%, 56%, 1);
+    --h3-color: hsla(36, 41%, 56%, 1);
+}
+
+/* 01 colour */
+body{
+    background-color: var(--body-color);
+}
+#zen-intro{
+    background-color: var(--page-color);
+}
+.sidebar{
+    background-color: var(--sidebar-color);
+}
+h1{
+    background-color: var(--h1-color);
+}
+h2{
+    background-color: var(--h2-color);
+}
+h3{
+    background-color: var(--h3-color);
+}
