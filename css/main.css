@@ -12,11 +12,14 @@
 /* 00 css var */
 :root{
     --body-color: hsla(358, 59%, 34%, 1);
-    --page-color: hsla(242, 24%, 50%, 0.671);
-    --sidebar-color: hsla(0, 0%, 100%, 1);
+    --page-color: hsl(240, 90%, 99%);
+    --sidebar-color: hsla(30, 40%, 50%, 1);
     --h1-color: hsla(36, 41%, 56%, 1);
     --h2-color: hsla(36, 41%, 56%, 1);
     --h3-color: hsla(36, 41%, 56%, 1);
+    --page-width: 20%;
+    --page-top: 80vh;
+
 }
 
 /* 01 colour */
@@ -37,4 +40,55 @@ h2{
 }
 h3{
     background-color: var(--h3-color);
+}
+
+/** 02 Layout **/
+div.explanation, div.requirements, div.benefits, div.participation{
+    position: fixed;
+    width: var(--page-width);
+    top: var(--page-top);
+}
+
+div.explanation{
+    left: 1%;
+}
+div.requirements{
+    left: 22%;
+}
+div.benefits{
+    left: 43%;
+}
+div.participation{
+    left: 64%;
+}
+
+aside.sidebar{
+    position:absolute;
+    top: 10%;
+    right: 0;
+    width: 20%;
+    height: 67%;
+}
+div.extra2{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 106px;
+    background-color: var(--h1-color);
+}
+div.extra1{
+    position: fixed;
+    left: 40%;
+    width: 35%;
+    height: 90vh;
+    background-image: url(../img/newspaper2.jpg);
+    z-index: -1;
+}
+section.intro{
+    position: absolute;
+    width: 35%;
+    height: 90vh;
+    left: 35%;
+    background-image: url(../img/newspaper3.jpg);
 }
