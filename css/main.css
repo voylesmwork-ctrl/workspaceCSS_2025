@@ -128,6 +128,7 @@ a{
 }
 li{
     list-style-type: none;
+    display: inline-block;
 }
 #design-selection{
     visibility: hidden;
