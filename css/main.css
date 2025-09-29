@@ -90,6 +90,7 @@ div.extra1{
     background-image: url(../img/newspaper2.jpg);
     z-index: -1;
     transform: rotate(10deg);
+    box-shadow: 5px 5px 5px rgb(55, 54, 54);
 }
 section.intro{
     position: absolute;
@@ -99,11 +100,19 @@ section.intro{
     top: 10%;
     background-image: url(../img/newspaper3.jpg);
     transform: rotate(357deg);
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(55, 54, 54);
 }
 /* file tab */
 div.explanation h3, div.requirements h3, div.benefits h3, div.participation h3{
     margin-left: 5%;
     text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 15px;
+}
+div.explanation p, div.requirements p, div.benefits p, div.participation p{
+    width: 100vh;
+    background-color: var(--h3-color);
 }
 /* 03 typography */
 @font-face{
@@ -130,12 +139,44 @@ li{
     list-style-type: none;
     display: inline-block;
 }
-#design-selection{
-    visibility: hidden;
+/* 04: transition, animation, selector practice */
+/* selector */
+a:hover{
+    font-weight: bold;
 }
-#design-archives{
-    display: none;
+h3:hover{
+    color: red;
+    font-weight: bolder;
 }
-#zen-resources{
-    display: none;
+div.explanation:active{
+    transition-duration: 3s;
+    top: 10vh;
+    height: 90vh;
+}
+div.requirements:active{
+    transition-duration: 3s;
+    top: 10vh;
+    height: 90vh;
+}
+div.benefits:active{
+    transition-duration: 3s;
+    top: 10vh;
+    height: 90vh;
+}
+div.participation:active{
+    transition-duration: 3s;
+    top: 10vh;
+    height: 90vh;
+}
+p::first-line{
+    font-size: 1.25em;
+}
+p:nth-child(2n){
+    background-color: rgb(245, 230, 215);
+}
+p:nth-child(2n+1){
+    background-color: rgb(200, 187, 174);
+}
+ul{
+    list-style-image: url(../img/star.png);
 }
