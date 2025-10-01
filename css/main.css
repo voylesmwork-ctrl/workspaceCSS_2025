@@ -69,8 +69,8 @@ aside.sidebar{
     position:absolute;
     top: 10%;
     right: 0;
-    width: 18%;
-    height: 400px;
+    width: 15%;
+    height: 800px;
     font-size: 10pt;
 }
 div.extra2{
@@ -177,8 +177,10 @@ p:nth-child(2n){
 p:nth-child(2n+1){
     background-color: rgb(200, 187, 174);
 }
-ul{
-    list-style-image: url(../img/star.png);
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
 }
 section.intro h3 ~ p {
     text-transform: capitalize;
@@ -210,6 +212,9 @@ footer {
     from{transform: translateX(5vh);}
     50%{transform: translateX(176vh);}
     to{transform: translateX(5vh);}
+}
+aside.sidebar{
+    clip-path: polygon(0 0, 0 60%, 46% 70%, 90% 60%, 90% 0);
 }
 /* div{background-color: hsla(200,50%,70%,0.3);}
 .wrapper {background-color: white; display: grid; grid-template-columns: 100px  repeat(2, 1fr) 100px;
